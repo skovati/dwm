@@ -18,8 +18,20 @@ dwm_cpu () {
     printf "%% | "
 }
 
+dwm_vol () {
+    printf "vol:"
+    printf $(pamixer --get-volume)
+    printf "%% | "
+}    
+
+dwm_bat () {
+    printf "bat:"
+    printf $(cat /sys/class/power_supply/BAT0/capacity)
+    printf "%% | "
+}
+
 dwm_date () {
-    printf $(date +%T)
+    printf "%s" "$(date "+%I:%M:%S %P")"
     printf " "
 
 }
@@ -28,6 +40,6 @@ dwm_date () {
 
 while true
 do
-    xsetroot -name "$(dwm_ip)$(dwm_mem)$(dwm_cpu)$(dwm_date)"
+    xsetroot -name "$(dwm_ip)$(dwm_mem)$(dwm_cpu)$(dwm_vol)$(dwm_bat)$(dwm_date)"
             sleep 1
         done
