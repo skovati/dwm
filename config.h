@@ -10,11 +10,11 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "TamzenForPowerline:size=14:antialias=false" };
-static const char dmenufont[]       = "TamzenForPowerline:size=14:antialias=false";
+static const char *fonts[]          = { "TamzenForPowerline:size=12:antialias=false" };
+static const char dmenufont[]       = "TamzenForPowerline:size=12:antialias=false";
 static const char col_gray1[]       = "#444444";
-static const char col_gray2[]       = "#1d2021";
-static const char col_gray3[]       = "#fbf1c7";
+static const char col_gray2[]       = "#070D0B";
+static const char col_gray3[]       = "#cfb9a8";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
@@ -42,7 +42,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
