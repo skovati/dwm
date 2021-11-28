@@ -1,7 +1,16 @@
-dwm - dynamic window manager
+skovati's dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+Patches included
+------------
+- dwm-attachaside
+- dwm-cfacts-vanitygaps
+- dwm-colorbar
+- dwm-cyclelayouts
+- dwm-focusonclick
+- dwm-hide_vacant_tags
+- dwm-pertag
 
 Requirements
 ------------
